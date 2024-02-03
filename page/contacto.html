@@ -5,20 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="shortcut icon" href="../medios/ICON.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
     <header>
-        <a href="../index.html"> <img src="../medios/LOGO.png" alt="Fitnessclub"> </a>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./conocenos.html">Conocenos</a></li>
-                <li><a class="active" href="#">Contacto</a></li>
-                <li><a href="./rutinas.html">Rutinas</a></li>
-                <li><a href="./testimonios.html">Testimonios</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar  navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+              <a href="../index.html"> <img src="../medios/logo.png" alt="Fitnessclub"> </a>
+              <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./conocenos.html">Conocenos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="active" href="#">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./rutinas.html">Rutinas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="./testimonios.html">Testimonios</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
         <section class="bannercontacto">
@@ -26,17 +44,16 @@
                 <span class="titulocolorsh1">con las ganas</span></h1>
             <p class=" titulocolorp1">Hay quiénes llevan entrenando <br> 
                 con nosotros desde hace muchos años. <br>
-                Otros nos conocieron en la cuarentena. <br>
-                Y tu <span class="subrayado2">¿qué esperas para iniciar?</span></p>
+                <span class="subrayado2">¿qué esperas para iniciar?</span></p>
         </section>
         <section>
-            <div class="padreformulario">
+            <div class="contenidoformulario">
                 <div class="textoformulario">
                     <h2>SOY NUEVO AQUÍ</h2>
                     <p>Si has llegado a esta página puede ser por dos motivos. <br>
                         O te has perdido o tienes alguna pregunta en mente. <br>
                         ¿No es así? Si tienes alguna pregunta, consulta o duda <br>
-                        por pequeña que sea, estás en el lugar correcto.<br>
+                        por pequeña que sea, estás en el lugar correcto.<br> <br>
                         Rellena el formulario de esta página y tendrás tu respuesta <br>
                         en menos de 48h. Que no cunda el pánico si hay fines de semana <br>
                         o días de fiesta. Aquí trabajamos duro para prestar el mejor servicio.</p>
@@ -78,138 +95,107 @@
         <section>
             <div class="padrepreguntas">
                 <div>
-                    <img src="../medios/contacto/chica.png" alt="">
+                    <img class="imagenchica" src="../medios/contacto/chica.png" alt="">
                 </div>
                 <div class="contenedorpreguntas">
                     <h2>preguntas frecuentes</h2>
                     <div class="acordeon">
                         <input type="radio" name="preguntas" id="contenedorpregunta1" class="contenedorpreguntas2">
                         <label for="contenedorpregunta1">
-                            ¿Lorem ipsum dolor sit, amet consectetur?
+                            ¿Cuál es el tiempo de permanencia?
                         </label>
                         <div class="respuesta">
-                            <p> Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Maiores suscipit quisquam
-                                earum, vero illo minus libero omnis voluptatem
-                                quas aspernatur! Cum iste ad ut provident
-                                sapiente voluptatibus pariatur nihil quas.</p>
+                            <p> No hay permanencia, puedes entrar y salir siempre que quieras.
+                                puedes cancelar cuando quieras sin ningún problema. Pero queremos
+                                que tu permanecia con nosotros sea por toda la vida.
+                                Danos la oportunidad de acompañarte en este camino del guerrero.</p>
                         </div>
                     </div>
                     <div class="acordeon">
                         <input type="radio" name="preguntas" id="contenedorpregunta2" class="contenedorpreguntas2">
                         <label for="contenedorpregunta2">
-                            ¿Lorem ipsum dolor sit, amet consectetur?
+                            ¿Cómo selecciono el plan de entrenamiento?
                         </label>
                         <div class="respuesta">
-                            <p> Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Maiores suscipit quisquam
-                                earum, vero illo minus libero omnis voluptatem
-                                quas aspernatur! Cum iste ad ut provident
-                                sapiente voluptatibus pariatur nihil quas.</p>
+                            <p> Todos los planes (adelgaza, aumento de masa muscular,
+                                siempre en forma, glúteos, yoga, embarazadas, desde cero,
+                                musculacos, etc) los tienes disponibles dentro del club Fitnessclub.
+                                Es decir, eliges el plan una vez dentro de la app o de la plataforma.</p>
                         </div>
                     </div>
                     <div class="acordeon">
                         <input type="radio" name="preguntas" id="contenedorpregunta3" class="contenedorpreguntas2">
                         <label for="contenedorpregunta3">
-                            ¿Lorem ipsum dolor sit, amet consectetur?
+                            ¿Una app? ¿Para qué sirve?
                         </label>
                         <div class="respuesta">
-                            <p> Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Maiores suscipit quisquam
-                                earum, vero illo minus libero omnis voluptatem
-                                quas aspernatur! Cum iste ad ut provident
-                                sapiente voluptatibus pariatur nihil quas.</p>
+                            <p> Ahora mismo tenemos una web-app que puedes visualizar
+                                en cualquier parte y cuando quieras. Desde el móvil, PC,
+                                tablet, etc. Esta web app se adapta perfectamente a cada
+                                dispositivo para no dejarte sin entrenar ni un solo día,
+                                estés donde estés.</p>
                         </div>
                     </div>
                     <div class="acordeon">
                         <input type="radio" name="preguntas" id="contenedorpregunta4" class="contenedorpreguntas2">
                         <label for="contenedorpregunta4">
-                            ¿Lorem ipsum dolor sit, amet consectetur?
+                            ¿Qué es exactamente esto de Fitnessclub?
                         </label>
                         <div class="respuesta">
-                            <p> Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Maiores suscipit quisquam
-                                earum, vero illo minus libero omnis voluptatem
-                                quas aspernatur! Cum iste ad ut provident
-                                sapiente voluptatibus pariatur nihil quas.</p>
+                            <p> Es un gimnasio online para conseguir el objetivo que quieres.
+                                Por cada objetivo que tengas, tienes plan de entrenamiento 
+                                variado con nuevas rutinas cada mes. Seremos los encargados
+                                de darte motivación para que consigas estar siempre más fuertes
+                                que el vinagre</p>
                         </div>
                     </div>
                     <div class="acordeon">
                         <input type="radio" name="preguntas" id="contenedorpregunta5" class="contenedorpreguntas2">
                         <label for="contenedorpregunta5">
-                            ¿Lorem ipsum dolor sit, amet consectetur?
+                            Ya estoy en forma, ¿esto es para mí?
                         </label>
                         <div class="respuesta">
-                            <p> Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Maiores suscipit quisquam
-                                earum, vero illo minus libero omnis voluptatem
-                                quas aspernatur! Cum iste ad ut provident
-                                sapiente voluptatibus pariatur nihil quas.</p>
+                            <p> Por supuesto. Digamos que estar en forma “no acaba nunca”.
+                                Nunca vas a llegar a un momento donde de repente el cuerpo
+                                mantenga su forma sin hacer nada.</p>
                         </div>
                     </div>
                     <div class="acordeon">
                         <input type="radio" name="preguntas" id="contenedorpregunta6" class="contenedorpreguntas2">
                         <label for="contenedorpregunta6">
-                            ¿Lorem ipsum dolor sit, amet consectetur?
+                            ¿Cuánto tiempo disfruto el precio de la oferta?
                         </label>
                         <div class="respuesta">
-                            <p> Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Maiores suscipit quisquam
-                                earum, vero illo minus libero omnis voluptatem
-                                quas aspernatur! Cum iste ad ut provident
-                                sapiente voluptatibus pariatur nihil quas.</p>
+                            <p> Podrás disfrutar de Fitnessclub con ese precio durante un año
+                                o un mes, dependiendo del plan al que te hayas apuntado.
+                                Me comprometo a mantener ese precio para ti durante ese tiempo.
+                                Eso sí, tienes que entrar antes de que se acabe el plazo. 😀</p>
                         </div>
                     </div>
                     <div class="acordeon">
                         <input type="radio" name="preguntas" id="contenedorpregunta7" class="contenedorpreguntas2">
                         <label for="contenedorpregunta7">
-                            ¿Lorem ipsum dolor sit, amet consectetur?
+                            Garantía y devoluciones
                         </label>
                         <div class="respuesta">
-                            <p> Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Maiores suscipit quisquam
-                                earum, vero illo minus libero omnis voluptatem
-                                quas aspernatur! Cum iste ad ut provident
-                                sapiente voluptatibus pariatur nihil quas.</p>
+                            <p> Tengo tan claro que Fitnessclub funciona y que puedes conseguir resultados 
+                                con él que prefiero ser yo quien corra el riesgo con tal de que lo pruebes. 
+                                Únete a Fitnessclub y, si no te gusta o no es lo que esperabas, pide la devolución 
+                                antes de 15 días y tendrás tu dinero de vuelta cuanto antes (el plazo varía dependiendo
+                                de cómo hayas hecho el pago).</p>
                         </div>
                     </div>
                     <div class="acordeon">
                         <input type="radio" name="preguntas" id="contenedorpregunta8" class="contenedorpreguntas2">
                         <label for="contenedorpregunta8">
-                            ¿Lorem ipsum dolor sit, amet consectetur?
+                            Aviso Médico
                         </label>
                         <div class="respuesta">
-                            <p> Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Maiores suscipit quisquam
-                                earum, vero illo minus libero omnis voluptatem
-                                quas aspernatur! Cum iste ad ut provident
-                                sapiente voluptatibus pariatur nihil quas.</p>
-                        </div>
-                    </div>
-                    <div class="acordeon">
-                        <input type="radio" name="preguntas" id="contenedorpregunta9" class="contenedorpreguntas2">
-                        <label for="contenedorpregunta9">
-                            ¿Lorem ipsum dolor sit, amet consectetur?
-                        </label>
-                        <div class="respuesta">
-                            <p> Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Maiores suscipit quisquam
-                                earum, vero illo minus libero omnis voluptatem
-                                quas aspernatur! Cum iste ad ut provident
-                                sapiente voluptatibus pariatur nihil quas.</p>
-                        </div>
-                    </div>
-                    <div class="acordeon">
-                        <input type="radio" name="preguntas" id="contenedorpregunta10" class="contenedorpreguntas2">
-                        <label for="contenedorpregunta10">
-                            ¿Lorem ipsum dolor sit, amet consectetur?
-                        </label>
-                        <div class="respuesta">
-                            <p> Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Maiores suscipit quisquam
-                                earum, vero illo minus libero omnis voluptatem
-                                quas aspernatur! Cum iste ad ut provident
-                                sapiente voluptatibus pariatur nihil quas.</p>
+                            <p> El ejercicio físico es una de las mejores herramientas para mejorar
+                                la salud y la calidad de vida. No obstante, existen algunos casos
+                                puntuales en los que la práctica de ejercicio podría suponer problemas
+                                para la salud. Esto podría ocurrir en personas que tengan problemas
+                                importantes de salud, como por ejemplo patologías cardiovasculares.</p>
                         </div>
                     </div>
                 </div>
@@ -227,5 +213,6 @@
             <a href="https://www.tiktok.com/foryou"> <img src="../medios/inicio/tiktok.png" alt=""> </a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

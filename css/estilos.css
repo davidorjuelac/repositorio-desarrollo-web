@@ -1,47 +1,44 @@
+/* aspectos generales de la pagina 1024 de ancho*/
 body{
     font-family: 'Roboto', sans-serif;
     background-color:  black;
     margin: 0;
 }
+
+
+
+
+/* menu de navegacion bootstrap */
 header{
-    background-color: #2E2E2E;
-    display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0%;
 }
 header img{
-    width: 350px;
-    margin-top: 6px;
-    margin-left: 20px;
-}
-nav{
-    width: 40%;
+    width: 300px;
 }
 header ul{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 50px;
+    margin-left: 150px;
 }
 header a{
-    color: aliceblue;
+    padding: 0px 15px;
+    color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 header a:hover,
 header a.active{
     color: #80FF00;
 }
+
+
+
+
+/* banner paginas */
 .bannerinicio{
     text-align: center;
     background-image: url(../medios/inicio/banner.png);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 200px 50px;
+    padding: 150px 50px;
     text-align: left;
 }
 .bannerconocenos{
@@ -49,42 +46,47 @@ header a.active{
     background-image: url(../medios/conocenos/banner.png);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 200px 50px;
+    padding: 180px 50px;
     text-align: left;
 }
 .bannercontacto{
     text-align: center;
     background-image: url(../medios/contacto/banner.png);
     background-size: cover;
-    padding: 200px 50px;
+    padding: 180px 50px;
     text-align: left;
-}
-.subrayado2{
-    text-transform: uppercase;
-    font-weight: lighter;
-    color: #80FF00;
-
 }
 .bannerrutinas{
     text-align: center;
     background-image: url(../medios/rutinas/banner.png);
     background-size: cover;
-    padding: 200px 50px;
+    padding: 180px 50px;
     text-align: left;
 }
 .bannertestimonios{
     background-image: url(../medios/testimonio/banner.png);
     background-size: cover;
-    padding: 200px 50px;
+    padding: 180px 50px;
     text-align: left;
+}
+
+
+
+
+/* aspectos generales banner */
+.subrayado2{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #80FF00;
 }
 button{
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 1.5em;
-    padding: 15px 30px;
-    border-radius: 30px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,5);
+    font-size: 0.9em;
+    padding: 10px 15px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,5);
     color: black;
     background-color: #80FF00;
     border: none;
@@ -94,79 +96,86 @@ button:hover{
 }
 .titulocolorh1{
     padding: 30px 0px;
-    font-weight: lighter;
+    font-weight: bolder;
     text-transform: uppercase;
     color: #80FF00;
-    font-size: 3rem;    
+    font-size: 1.5rem;    
 }
 .titulocolorsh1{
-    font-weight: normal;
+    font-weight: lighter;
     color: white;
 }
 .titulocolorp1{
     line-height: 110%;
     font-weight: lighter;
-    font-size: 2rem;
+    font-size: 1rem;
 }
+
+
+
+
+/* tamaño de imagenes general */
 main img{
-    width: 800px;
+    width: 512px;
 }
-.contenidogrid{
+
+
+
+
+/* contenido cuerpo paginas inicio y conocenos */
+.contenidoinicio{
     display: grid;
     grid-template-columns: 50% 50%;
     text-align: left;
 }
-.contenidogrid1{
+.contenidoiniciotexto,
+.contenidoiniciotexto1{
+    padding: 5px;
+}
+.contenidoinicio1{
     display: grid;
     grid-template-columns: 50% 50%;
     text-align: right;
 }
-.titulogridh2{
+.contenidoiniciotextoh2{
     color: #80ff00;
     text-transform: uppercase;
-    font-size: 3rem;
-    padding: 10px 50px;
+    font-size: 1.5rem;
+    padding: 20px 48px 0px 48px;
 }
-.colorgridh3{
+.contenidoconocenostextoh2{
+    font-weight: lighter;
+    color: #80ff00;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 60px 50px 0px;
+    line-height: 115%;
+}
+.contenidoiniciotextoh3{
     color: white;
     text-transform: uppercase;
-    font-size: 1,5rem;
+    font-size: 1rem;
     padding: 5px 50px;
 }
-.colorgridp{
+.contenidoiniciotextop{
     font-weight: lighter;
     color: white;
-    font: 1rem;
-    padding: 5px 50px;
+    font: .5rem;
+    padding: 0px 50px;
     line-height: 130%;
 }
-.tarjetas{
-    display: flex;
-    justify-content: space-around;
-}
-.tarjetascontenido{
-    border-radius: 10px;
-    width: 30%;
-    background-color: #2E2E2E;
-    color: white;
-    text-align: center;
-}
-.tarjetascontenido p{
-    padding: 0px 5px;
-}
-.tarjetascontenido img{
-    width: 100%;
-}
-main p{
-    color: aliceblue; 
-}
+
+
+
+
+/* contenido final inicio */
 .titulocolorh2{
-    padding: 80px 0px 0px 0px;
+    padding: 60px 0px 0px 0px;
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
     color: #80FF00;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .titulocolorsh2{
     font-weight: normal;
@@ -176,15 +185,15 @@ main p{
     line-height: 130%;
     text-align: center;
     font-weight: lighter;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .subrayado{
     font-weight: bold;
     text-transform: uppercase;
     color: #80FF00;
-    font-size: 1.7rem;  
+    font-size: 1rem;  
 } 
-.divpadreflex{
+.imagenesinicio{
     text-transform: uppercase;
     margin-bottom: 10px;
     display: flex;
@@ -193,18 +202,58 @@ main p{
     color: #80FF00;    
 }
 .tamaño{
-    width: 280px;
-    height: 280px;
+    width: 180px;
+    height: 180px;
 }
-.padreformulario{
+.imageniniciotexto{
+    font-size: 1rem;
+    padding: 10px;
+    font-weight: lighter;
+}
+
+
+
+
+
+/* contenmido rutinas y testimonios */
+.tarjetas{
     display: flex;
-    padding: 0px 1% 0px 0px;
+    justify-content: space-around;
+}
+.tarjetascontenido{
+    border-radius: 10px;
+    width: 30%;
+    background-color: #2E2E2E;
+    color: #80ff00;
+    text-align: center;
+}
+.tarjetascontenido p{
+    padding: 0px 5px;
+}
+.tarjetascontenido h2{
+    font-size: 1.5rem;
+}
+.tarjetascontenido img{
+    width: 100%;
+}
+main p{
+    font-weight: bold;
+    font-size: 0.7rem;
+    color: aliceblue; 
+}
+
+
+
+
+/* contenido contacto */
+.contenidoformulario{
+    display: flex;
 }
 .textoformulario{
     color: #80ff00;
     font-weight: lighter;
     font: 1rem;
-    padding: 0px 100px;
+    padding: 150px 40px;
     line-height: 130%;
 }
 .formulario{
@@ -213,10 +262,10 @@ main p{
     box-sizing: border-box;
     background-color: #2E2E2E;
     font-weight: lighter;
-    padding: 1em 1.5em;
-    max-width: 600px;
+    padding: .5em .5em;
+    max-width: 400px;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 60px;
 }
 .desblock{
     display: grid;
@@ -229,7 +278,7 @@ main p{
     text-transform: uppercase;
     color: #ffffff;
     text-align: left;
-    padding: 0em 1em;
+    padding: 20px 16px;
 }
 .formulario1 form p{
     margin: 0%;
@@ -265,20 +314,22 @@ main p{
 }
 .contenedorpreguntas{
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 .contenedorpreguntas h2{
+    padding: 10px 0px 10px 0px;
     text-align: center;
     text-transform: uppercase;
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 .acordeon label{
+    box-shadow: 0px 0px 7px 7px rgba(128,255,0,1);
     display: block;
     padding: 20px;
-    font-size: 1.3em;
+    font-size: 1em;
     background: #2E2E2E;
     color: white;
     cursor: pointer;
@@ -297,12 +348,20 @@ main p{
     transition: all 300ms ease;
 }
 .contenedorpreguntas2:checked ~ .respuesta{
-    max-height: 600px;
+    max-height: 400px;
     padding: 15px 0px;
 }
 .contenedorpreguntas2{
     display: none;
 }
+.imagenchica{
+    padding: 80px 0px 10px;
+}
+
+
+
+
+/* redes paginas */
 footer{
     border-radius: 20px;
     margin: 30px;
@@ -318,7 +377,9 @@ footer img{
 }
 footer div{
     display: flex;
-    padding: 0 690px;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: 26px;
 }
 footer a{
     width: 50px;
@@ -327,34 +388,34 @@ footer h3{
     color: #80FF00;
     display: flex;
     justify-content: center;
-    font-size: 1,3em;
+    font-size: 1.3em;
 }
+
+
+
+
+/* responsive tamaño celular */
 @media screen and (max-width:500px) {
-    header{
-        flex-direction: column-reverse;
+    header ul{
+
+        width: 40%;
+        text-align: center;
     }
-    nav{
-        width: 100%;
-        margin-top: 5px;
+    nav ul li{
+        font-size: 20px;
     }
-    ul{
-        margin: 5px 10 px;
-    }
+    .bannerinicio,
+    .bannerconocenos,
+    .bannercontacto,
+    .bannerrutinas,
     .bannertestimonios{
         padding: 230px 0px 0px 0px;
         height: 1px;
         text-align: center;
-        background-image: url(../medios/testimonio/banner.png);
     }
-   .bannerinicio{
-        padding: 270px 0px 0px 0px;
-        height: 1px;
-        text-align: center;
-        background-image: url(../medios/inicio/banner.png);
-   }
    .titulocolorh1{
-        padding: 2px 0px;
-        font-weight: lighter;
+        padding: 10px 0px 0px 0px;
+        font-weight: bolder;
         text-transform: uppercase;
         color: #80FF00;
         font-size: 1.5rem; 
@@ -380,34 +441,42 @@ footer h3{
     main img{
         width: 500px;
     }
-    .contenidogrid{
+    .contenidoinicio{
         display: none;
     }
-    .contenidogrid1{
+    .contenidoinicio1{
         display: block;
         margin-top: 230px;
     }
-    .titulogridh2{
+    .contenidoiniciotextop{
+        text-align: center;
+        padding: 10px 0px 0px 0px;
+    }
+    .contenidoiniciotextoh2{
         text-align: center;
         color: #80ff00;
         text-transform: uppercase;
         font-size: 1rem;
-        padding: 0px 0px 0px 0px;
+        padding: 3px 0px 0px 0px;
     }
-    .colorgridh3{
+    .contenidoconocenostextoh2{
+        text-align: center;
+        color: #80FF00;
+        text-transform: uppercase;
+        font-size: 1rem;
+        padding: 10px 0px 0px 0px;
+    }
+    .contenidoiniciotextoh3{
         text-align: center;
         color: white;
         text-transform: uppercase;
         font-size: 1rem;
         padding: 0px 50px;
     }
-    .colorgridp{
-        text-align: center;
+    .imageniniciotexto{
+        font-size: .5rem;
+        padding: 10px;
         font-weight: lighter;
-        color: white;
-        font: 1rem;
-        padding: 0px 50px;
-        line-height: 130%;
     }
     .titulocolorh2{
         padding: 10px 0px 0px 0px;
@@ -415,7 +484,7 @@ footer h3{
         font-weight: bold;
         text-transform: uppercase;
         color: #80FF00;
-        font-size: 1.5rem;
+        font-size: 1.5em;
     }
     .titulocolorsh2{
         font-weight: normal;
@@ -425,23 +494,14 @@ footer h3{
         line-height: 130%;
         text-align: center;
         font-weight: lighter;
-        font-size: 1rem;
+        font-size: 1em;
     }
     .subrayado{
         font-weight: bold;
         text-transform: uppercase;
         color: #80FF00;
-        font-size: 1rem;  
+        font-size: 1em;  
     } 
-    .divpadreflex{
-        text-transform: uppercase;
-        margin-bottom: 0.5px;
-        display: flex;
-        justify-content: space-around;
-        text-align: center;
-        color: #80FF00;
-        font-size: 0.5rem;  
-    }
     .tamaño{
         width: 100px;
         height: 100px;
@@ -453,13 +513,18 @@ footer h3{
         display: none; 
     }    
     .tarjetas{
+        padding:  0px 0px 0px 50px;
         display: block;
+    }
+    .iframe{
+        padding: 20px;
+        width: 50%;
     }
     .tarjetascontenido{
         border-radius: 10px;
-        width: 100%;
+        width: 90%;
         background-color: #2E2E2E;
-        color: white;
+        color: #80ff00;
         text-align: center;
     }
     .tarjetascontenido p{
@@ -468,6 +533,21 @@ footer h3{
     .tarjetascontenido img{
         width: 100%;
     }
+    .contenidoformulario{
+        display: list-item
+    }    
+    .textoformulario{
+        padding: 160px 0px 20px 0px;
+        text-align: center;
+    }
+    .formulario{
+        margin-right: 50px;
+    }
+    .imagenchica{
+        display: none;
+    }
+
+
     footer{
         border-radius: 10px;
         margin: 1px;
@@ -492,6 +572,6 @@ footer h3{
         color: #80FF00;
         display: flex;
         justify-content: center;
-        font-size: 1em;
+        font-size: .9em;
     }
 }
