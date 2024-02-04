@@ -5,7 +5,7 @@ body{
     margin: 0;
 }
 
-
+    
 
 
 /* menu de navegacion bootstrap */
@@ -13,10 +13,10 @@ header{
     flex-direction: row;
 }
 header img{
-    width: 300px;
+    width: 350px;
 }
 header ul{
-    margin-left: 150px;
+    margin-left: 350px;
 }
 header a{
     padding: 0px 15px;
@@ -38,7 +38,7 @@ header a.active{
     background-image: url(../medios/inicio/banner.png);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 150px 50px;
+    padding: 180px 50px;
     text-align: left;
 }
 .bannerconocenos{
@@ -46,27 +46,27 @@ header a.active{
     background-image: url(../medios/conocenos/banner.png);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 180px 50px;
+    padding: 200px 50px;
     text-align: left;
 }
 .bannercontacto{
     text-align: center;
     background-image: url(../medios/contacto/banner.png);
     background-size: cover;
-    padding: 180px 50px;
+    padding: 200px 50px;
     text-align: left;
 }
 .bannerrutinas{
     text-align: center;
     background-image: url(../medios/rutinas/banner.png);
     background-size: cover;
-    padding: 180px 50px;
+    padding: 200px 50px;
     text-align: left;
 }
 .bannertestimonios{
     background-image: url(../medios/testimonio/banner.png);
     background-size: cover;
-    padding: 180px 50px;
+    padding: 200px 50px;
     text-align: left;
 }
 
@@ -75,7 +75,7 @@ header a.active{
 
 /* aspectos generales banner */
 .subrayado2{
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     font-weight: bolder;
     color: #80FF00;
@@ -83,9 +83,9 @@ header a.active{
 button{
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 1.5em;
     padding: 10px 15px;
-    border-radius: 20px;
+    border-radius: 30px;
     box-shadow: 1px 1px 10px rgba(0,0,0,5);
     color: black;
     background-color: #80FF00;
@@ -99,7 +99,7 @@ button:hover{
     font-weight: bolder;
     text-transform: uppercase;
     color: #80FF00;
-    font-size: 1.5rem;    
+    font-size: 2rem;    
 }
 .titulocolorsh1{
     font-weight: lighter;
@@ -108,7 +108,7 @@ button:hover{
 .titulocolorp1{
     line-height: 110%;
     font-weight: lighter;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 
@@ -116,7 +116,7 @@ button:hover{
 
 /* tamaño de imagenes general */
 main img{
-    width: 512px;
+    width: 641px;
 }
 
 
@@ -140,27 +140,27 @@ main img{
 .contenidoiniciotextoh2{
     color: #80ff00;
     text-transform: uppercase;
-    font-size: 1.5rem;
-    padding: 20px 48px 0px 48px;
+    font-size: 2rem;
+    padding: 28px 48px 0px 48px;
 }
 .contenidoconocenostextoh2{
-    font-weight: lighter;
+    font-weight: bold;
     color: #80ff00;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 2rem;
     padding: 60px 50px 0px;
     line-height: 115%;
 }
 .contenidoiniciotextoh3{
     color: white;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 5px 50px;
 }
 .contenidoiniciotextop{
     font-weight: lighter;
     color: white;
-    font: .5rem;
+    font-size:  1rem;
     padding: 0px 50px;
     line-height: 130%;
 }
@@ -202,13 +202,13 @@ main img{
     color: #80FF00;    
 }
 .tamaño{
-    width: 180px;
-    height: 180px;
+    width: 230px;
+    height: 230px;
 }
 .imageniniciotexto{
-    font-size: 1rem;
+    font-size: 1.3rem;
     padding: 10px;
-    font-weight: lighter;
+    font-weight: bold;
 }
 
 
@@ -237,8 +237,8 @@ main img{
     width: 100%;
 }
 main p{
-    font-weight: bold;
-    font-size: 0.7rem;
+    font-weight: lighter;
+    font-size: .9rem;
     color: aliceblue; 
 }
 
@@ -252,8 +252,8 @@ main p{
 .textoformulario{
     color: #80ff00;
     font-weight: lighter;
-    font: 1rem;
-    padding: 150px 40px;
+    font: 1rem;   
+    padding: 150px 55px;
     line-height: 130%;
 }
 .formulario{
@@ -263,7 +263,7 @@ main p{
     background-color: #2E2E2E;
     font-weight: lighter;
     padding: .5em .5em;
-    max-width: 400px;
+    max-width: 600px;
     margin-left: auto;
     margin-right: 60px;
 }
@@ -282,7 +282,7 @@ main p{
 }
 .formulario1 form p{
     margin: 0%;
-    padding: 1.5em;
+    padding: 1em;
 }
 .formulario1 form input,
 .formulario1 form button,
@@ -314,7 +314,7 @@ main p{
 }
 .contenedorpreguntas{
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     margin: auto;
     margin-top: 40px;
 }
@@ -397,12 +397,11 @@ footer h3{
 /* responsive tamaño celular */
 @media screen and (max-width:500px) {
     header ul{
-
-        width: 40%;
+        margin-left: 30px;
         text-align: center;
     }
-    nav ul li{
-        font-size: 20px;
+    header img{
+        width: 250px
     }
     .bannerinicio,
     .bannerconocenos,
@@ -414,11 +413,15 @@ footer h3{
         text-align: center;
     }
    .titulocolorh1{
-        padding: 10px 0px 0px 0px;
+        padding: 20px 0px 0px 0px;
         font-weight: bolder;
         text-transform: uppercase;
         color: #80FF00;
         font-size: 1.5rem; 
+   }
+   .subrayado2{
+        line-height: 140%;
+        font-size: 1rem;
    }
    .titulocolorp1{
         line-height: 110%;
@@ -457,7 +460,7 @@ footer h3{
         color: #80ff00;
         text-transform: uppercase;
         font-size: 1rem;
-        padding: 3px 0px 0px 0px;
+        padding: px 0px 0px 0px;
     }
     .contenidoconocenostextoh2{
         text-align: center;
@@ -516,13 +519,9 @@ footer h3{
         padding:  0px 0px 0px 50px;
         display: block;
     }
-    .iframe{
-        padding: 20px;
-        width: 50%;
-    }
     .tarjetascontenido{
         border-radius: 10px;
-        width: 90%;
+        width: 85%;
         background-color: #2E2E2E;
         color: #80ff00;
         text-align: center;
@@ -537,17 +536,20 @@ footer h3{
         display: list-item
     }    
     .textoformulario{
-        padding: 160px 0px 20px 0px;
+        padding: 180px 0px 20px 0px;
         text-align: center;
     }
     .formulario{
-        margin-right: 50px;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+    .padrepreguntas{
+        margin-right: 40px;
+        margin-left: 40px;
     }
     .imagenchica{
         display: none;
     }
-
-
     footer{
         border-radius: 10px;
         margin: 1px;
