@@ -1,0 +1,21 @@
+.tarjetas{
+    display: flex;
+    justify-content: space-around;
+    .tarjetascontenido{
+        border-radius: 10px;
+        width: 30%;
+        background-color: #2E2E2E;
+        color: #80ff00;
+        text-align: center;
+        h2{
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        p{
+            padding: 0px 5px;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}

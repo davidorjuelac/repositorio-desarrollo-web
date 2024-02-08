@@ -1,0 +1,294 @@
+/* destock 1280 */
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color:  black;
+    margin: 0;
+}
+header{
+    flex-direction: row;
+    img{
+        width: 350px;
+    }
+    ul{
+        margin-left: 350px;
+        a{
+            padding: 0px 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover,
+        a.active{
+                color: #80FF00;
+        }
+    }
+}
+
+/* contenido banner paginas */
+
+@import "generales/banner.scss";
+
+img{
+    width: 641px;
+}
+p{
+    font-weight: lighter;
+    font-size: .9rem;
+    color: aliceblue; 
+}
+
+/* contenido inicio y conocenos*/
+
+@import "generales/cuerpo-ini-con.scss";
+
+/* contenido contacto */
+
+@import "generales/contacto.scss";
+
+/* contenido tarjetas */
+
+@import "generales/tarjetas.scss";
+
+/* contenido final inicio */
+
+section{
+    .titulocolorh2{
+        padding: 60px 0px 0px 0px;
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #80FF00;
+        font-size: 1.5rem;
+        .titulocolorsh2{
+            font-weight: normal;
+            color: white;
+        }
+    }
+    .titulocolorp2{
+        line-height: 130%;
+        text-align: center;
+        font-weight: lighter;
+        font-size: 1rem;
+        .subrayado{
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #80FF00;
+            font-size: 1rem;  
+        }
+    }
+    .imagenesinicio{
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        color: #80FF00;
+        .tamaño{
+            width: 230px;
+            height: 230px;
+        }    
+    }
+    .imageniniciotexto{
+        font-size: 1.3rem;
+        padding: 10px;
+        font-weight: bold;
+    }
+}
+
+/* Contenido paginas footer */
+
+@import "generales/footer";
+
+/* resposive 500 celular */
+
+@media screen and (max-width:500px) {
+    header{
+        img{
+            width: 250px
+        }
+        ul{
+            margin-left: 30px;
+            text-align: center;
+        }
+    }     
+    .bannerinicio,
+    .bannerconocenos,
+    .bannercontacto,
+    .bannerrutinas,
+    .bannertestimonios{
+        padding: 230px 0px 0px 0px;
+        height: 1px;
+        text-align: center;
+        button{
+            padding-bottom: 200px;
+            overflow-x: auto;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 0.9em;
+            padding: 8px 25px;
+            border-radius: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,5);
+            color: black;
+            background-color: #80FF00;
+            border: none;
+        } 
+        .titulocolorh1{
+            padding: 20px 0px 0px 0px;
+            font-weight: bolder;
+            text-transform: uppercase;
+            color: #80FF00;
+            font-size: 1.4rem; 
+        }
+        .titulocolorp1{
+            line-height: 110%;
+            font-weight: lighter;
+            font-size: 1rem;
+            .subrayado2{
+                line-height: 140%;
+                font-size: 1rem;
+            }
+        }
+    }
+    main img{
+        width: 500px;
+    }
+    .contenidoinicio{
+        display: none;
+    }
+    .contenidoinicio1{
+        display: block;
+        margin-top: 230px;
+        .contenidoiniciotextoh2{
+            text-align: center;
+            color: #80ff00;
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            padding: px 0px 0px 0px;
+        }
+        .contenidoiniciotextoh3{
+            text-align: center;
+            color: white;
+            text-transform: uppercase;
+            font-size: 1rem;
+            padding: 0px 50px;
+        }
+        .contenidoiniciotextop{
+            text-align: center;
+            padding: 10px 0px 0px 0px;
+        }
+    }
+    section{
+        .titulocolorh2{
+            text-align: center;
+            padding: 10px;
+            font-size: 1rem;
+        }
+        .titulocolorp2{
+            margin-left: 15px;
+            margin-right: 15px;
+            font-size: .9rem;
+        }
+        .subrayado{
+            font-size: .9rem;
+        }
+        .imagenesinicio{
+            display: contents;
+            justify-content: space-between;
+            .tamaño{
+                width: 400px;
+                height: 400px;
+            }
+        }
+        .imageniniciotexto{
+            font-size: 2rem;
+        }
+    }
+    .tarjetaspadre{
+        padding: 180px 0px 0px 0px;
+        .titulocolorh2{
+            padding: 10px; 
+        }
+        .tarjetas{
+        padding:  0px 0px 0px 50px;
+        display: block;
+        }
+        .tarjetascontenido{
+            border-radius: 10px;
+            width: 90%;
+            background-color: #2E2E2E;
+            color: #80ff00;
+            text-align: center;
+            h2{
+                display: none; 
+            }
+            p{
+                padding: 10px 5px;
+            }
+        }
+    }
+    .contenidoformulario{
+        display: contents;
+        .textoformulario{
+            padding: 170px 0px 20px 0px;
+            color: #80FF00;
+            text-align: center;
+        }
+        .formulario{
+            margin-left: 50px;
+            h2{
+                padding: 40px 0px 0px 0px;
+            }
+            p{
+                font-size: .8rem;
+                padding: 0px 0px 0px 0px;
+            }
+            .formulario1{
+                padding: 10px 40px;
+                border-radius: 20px;
+            }
+            .formulario1 form button{
+                padding: 10px 80px;
+            }
+            .formulario1 form button:hover{
+                background-color: #5fbf00;
+            }
+            button{
+                margin: 15px;
+            }           
+        }
+    }
+    .padrepreguntas{
+        margin-right: 40px;
+        margin-left: 40px;
+        .imagenchica{
+            display: none;
+        }
+    }
+    footer{
+        border-radius: 10px;
+        margin: 1px;
+        background-color: #2e2e2e;
+        display: list-item;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 0px;
+        h3{
+            color: #80FF00;
+            display: flex;
+            justify-content: center;
+            font-size: .9em;
+        }
+        div{
+            display: flex;
+            padding: 5px 130px;
+            a{
+                width: 35px;
+                img{
+                    width: 20px;
+                }
+            }
+        }
+    }
+}
