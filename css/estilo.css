@@ -172,9 +172,9 @@ p {
   background-color: #2E2E2E;
   font-weight: lighter;
   padding: 0.5em 0.5em;
-  max-width: 600px;
+  max-width: 500px;
   margin-left: auto;
-  margin-right: 65px;
+  margin-right: 80px;
 }
 .contenidoformulario .formulario .block {
   grid-column: 1/3;
@@ -199,7 +199,8 @@ p {
   text-align: left;
   padding: 20px 16px;
 }
-.contenidoformulario .formulario .formulario1 form p {
+.contenidoformulario .formulario .formulario1 form div {
+  color: #ffffff;
   margin: 0%;
   padding: 1em;
 }
@@ -207,7 +208,7 @@ p {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.5em;
-  padding: 15px 120px;
+  padding: 15px 100px;
   border-radius: 30px;
   box-shadow: 2px 2px 10px rgb(0, 0, 0);
   color: black;
@@ -425,7 +426,8 @@ footer div a img {
     font-size: 1rem;
   }
   .contenidoformulario .formulario {
-    margin-right: 40px;
+    max-width: 500px;
+    margin-right: 60px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -628,7 +630,7 @@ footer div a img {
     padding: 10px 50px;
   }
   .contenidoformulario .formulario button {
-    margin: 10px 50px;
+    margin: 10px 45px;
   }
   .padrepreguntas .imagenchica {
     padding: 100px 0px 0px 0px;
@@ -877,7 +879,7 @@ footer div a img {
     background-color: #5fbf00;
   }
   .contenidoformulario .formulario button {
-    margin: 10px 60px;
+    margin: 10px 55px;
   }
   .padrepreguntas {
     margin-right: 0px;
@@ -1097,7 +1099,7 @@ footer div a img {
     background-color: #5fbf00;
   }
   .contenidoformulario .formulario button {
-    margin: 10px 60px;
+    margin: 10px 50px;
   }
   .padrepreguntas {
     margin-right: 0px;
@@ -1317,7 +1319,7 @@ footer div a img {
     background-color: #5fbf00;
   }
   .contenidoformulario .formulario button {
-    margin: 10px 40px;
+    margin: 10px 35px;
   }
   .padrepreguntas {
     margin-right: 0px;
